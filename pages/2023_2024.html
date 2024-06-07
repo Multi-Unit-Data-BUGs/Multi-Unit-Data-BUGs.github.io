@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact Us - MUDBUG</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="../images/logo.png" alt="MUDBUG logo">
+                    </a>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown1')">
+                    <div class="select-selected">[Projects]</div>
+                    <div class="select-items select-hide dropdown1">
+                        <div onclick="selectItem('sensorsAndMothership.html', 'dropdown1')">Sensors & Mothership</div>
+                    </div>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown2')">
+                    <div class="select-selected">[Updates]</div>
+                    <div class="select-items select-hide dropdown2">
+                        <div onclick="selectItem('2023_2024.html', 'dropdown2')">2023-2024</div>
+                    </div>
+                </div>
+                <li><a href="members.html">[Members]</a></li>
+                <li><a href="contact.html">[Contact]</a></li>
+                <li><a href="about.html">[About]</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="main-content2">
+        <h1>MUDBUG Project Timeline</h1>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        <table>
+            <tr>
+                <th>High-Level Step</th>
+                <th>Description</th>
+                <th>Timeline</th>
+            </tr>
+            <tr>
+                <td>Incorporate</td>
+                <td>MUDBUG plans on incorporating in order to expand our team and production.</td>
+                <td>5/10/24 - 5/30/24</td>
+            </tr>
+            <tr>
+                <td>Optimization of Sensor Module Development</td>
+                <td>As we get ready for multiple planned site evaluations across the country as well as internationally, we need to produce multiple modules.</td>
+                <td>5/10/24 - 6/1/24</td>
+            </tr>
+            <tr>
+                <td>Relocate to a larger lab</td>
+                <td>Currently, we are in the process of renting a lab space in NewLab in Brooklyn, NY. This will allow us to expand our team and services.</td>
+                <td>9/15/24 - 12/31/24</td>
+            </tr>
+            <tr>
+                <td>Rapid Production of Prototypes</td>
+                <td>Produce 50 sensor module prototypes, each made up of different sensors, network designs, and enclosures that are informed by our customer discovery process and what we have learned.</td>
+                <td>6/15/24 - 6/15/25</td>
+            </tr>
+            <tr>
+                <td>Continue development of pH sensor</td>
+                <td>Our current design needs to be verified in the lab and compared to traditional soil sample results.</td>
+                <td>5/10/24 - 6/15/24</td>
+            </tr>
+            <tr>
+                <td>Continue development of E-Waste Sensors</td>
+                <td>Continue exploring our research in the development of Lux, CH4, and CO2 sensors using E-Waste.</td>
+                <td>9/5/24 - 5/10/25</td>
+            </tr>
+            <tr>
+                <td>Continue testing Mesh Network Topology</td>
+                <td>The mesh network topology using LoRa WAN needs to be tested and optimized in various environments. The data needs to be collected at a central point and analyzed.</td>
+                <td>6/1/24 - 7/1/24</td>
+            </tr>
+            <tr>
+                <td>Design of Cloudbase Server Management System</td>
+                <td>Currently, we are hosting a website from a Raspberry Pi in our labs. We now need to expand this system and build security to hold data recorded from our test visits.</td>
+                <td>5/10/24 - 10/15/24</td>
+            </tr>
+            <tr>
+                <td>Website and App Development and Deployment</td>
+                <td>Develop a website that would allow MUDBUG to share their progress. Develop a mobile application that has a friendly UI that allows farmers to look at their data real-time.</td>
+                <td>6/1/24 - 8/15/24</td>
+            </tr>
+            <tr>
+                <td>Continued Development of MUDBUG Sensor Module</td>
+                <td>Modular design of MUDBUG sensor housing needs to be prototyped and tested in outdoor conditions.</td>
+                <td>6/1/24 - 12/1/25</td>
+            </tr>
+            <tr>
+                <td>Solar Tracking PV System</td>
+                <td>Designing a system to figure out where the sun is shining the brightest to angle the solar panel in that direction for more generated power.</td>
+                <td>6/15/24 - 12/30/24</td>
+            </tr>
+            <tr>
+                <td>Redesign PMFC for Renewable Energy</td>
+                <td>The PMFC design has now been tested and confirmed in the Cooper Union rooftop garden. We now need to focus on redesigning it using E-Waste to lower the cost.</td>
+                <td>1/1/25 - 5/1/25</td>
+            </tr>
+            <tr>
+                <td>Research ISFET Sensors</td>
+                <td>Research to completely understand ISFET and design one using e-Waste.</td>
+                <td>9/1/24 - 9/1/25</td>
+            </tr>
+            <tr>
+                <td>Customer Discovery Trips</td>
+                <td>Going on more customer discovery trips to further inform our design. Trip to Kobi’s farm in Ghana. Revisit Jessica’s farm in Massachusetts. Additional visits to Virginia, Louisiana, and internationally to Brazil, Bosnia, Armenia, Hungary, and Japan.</td>
+                <td>6/15/24 - 1/14/25</td>
+            </tr>
+            <tr>
+                <td>Applying for a Provisional Patent</td>
+                <td>We have begun our search for legal advice using resources from our university. Currently, our modular housing, pH sensor from E-waste, and Mesh Network topology are ready for patenting.</td>
+                <td>2/1/25 - 12/5/25</td>
+            </tr>
+        </table> 
+    </section>
+    
+    <footer3>
+        <p>&copy; 2024 MUDBUG</p>
+    </footer3>
+    <script>
+        function toggleDropdown(dropdownClass) {
+            const dropdown = document.querySelector(`.${dropdownClass}`);
+            dropdown.classList.toggle("select-hide");
+        }
+
+        function selectItem(url, dropdownClass) {
+            window.location.href = url;
+            toggleDropdown(dropdownClass);
+        }
+        window.addEventListener('scroll', function() {
+            const footer = document.getElementById('footer3');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+
+        // Initially hide the footer
+        document.getElementById('footer3').style.display = 'none';
+    </script>
+</body>
+</html>

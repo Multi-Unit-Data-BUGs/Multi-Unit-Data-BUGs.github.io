@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Sensors and Mothership</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="../images/logo.png" alt="MUDBUG logo">
+                    </a>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown1')">
+                    <div class="select-selected">[Projects]</div>
+                    <div class="select-items select-hide dropdown1">
+                        <div onclick="selectItem('sensorsAndMothership.html', 'dropdown1')">Sensors & Mothership</div>
+                    </div>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown2')">
+                    <div class="select-selected">[Updates]</div>
+                    <div class="select-items select-hide dropdown2">
+                        <div onclick="selectItem('2023_2024.html', 'dropdown2')">2023-2024</div>
+                    </div>
+                </div>
+                <li><a href="members.html">[Members]</a></li>
+                <li><a href="contact.html">[Contact]</a></li>
+                <li><a href="about.html">[About]</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="main-content3">
+        <h1>Sensors and Mothership</h1>
+        <p>MUDBUG has a competitive edge in what it offers because of the following features:</p>
+        <ul>
+            <li>Low cost</li>
+            <li>Modular design</li>
+            <li>Personalized feedback and support</li>
+            <li>Polyculture compatible design</li>
+            <li>Off-grid network capabilities</li>
+            <li>Renewable energy powered sensor module</li>
+        </ul>
+        <h2>Cost Efficiency</h2>
+        <p>The reason MUDBUG is able to offer such a low cost per full module is due to the use of E-Waste. Our EC sensors are made from old AC plugs, which are abundantly available, and our pH sensors are currently being developed from Christmas light bulbs. Current market prices for pH sensors for solids are about $100. MUDBUG allows the farmer to completely own the sensor module, avoiding the higher risk associated with monthly payments.</p>
+
+        <p>MUDBUG comes equipped with 11 sensors, a renewable energy source, and Wi-Fi/cellular network data. The pricing can be adjusted based on what the stakeholder would like to purchase. Our sensors are modular so that farmers or government facilities can customize the modules to their own needs. This flexibility also allows for farmers to take on a lower risk with only the basic pH, EC, and temperature sensors and upgrade to a fuller module as they see results.</p>
+        
+        <h2>Financial Justification and ROI</h2>
+        <p>At $100 per sensor module, we must justify the money spent. The formula MUDBUG uses considers avoided costs over the period that the MUDBUG sensors will be equipped:</p>
+        <p><strong>Avoided Costs per Acre = Repair Damage + Yield Loss + Fertilizer Loss - MUDBUG module cost.</strong></p>
+        <p>It is estimated that 40% of yield is lost per acre, and each acre of farmland is valued at about $1300/acre, resulting in Yield Loss at $510/acre. Up to 50% of nitrogen and 60% of phosphorus applied to crops can be lost due to leaching and soil erosion to water courses. For nitrogen alone, 50 lb/acre of fertilizer is used, at about $0.95/lb of fertilizer, resulting in about $95 worth of fertilizer being lost in water systems. Our MUDBUG modules are estimated to be $100 per module per acre. With a total of $605/acre lost, subtracting the MUDBUG module, the Avoided Cost per Acre is $505/acre. This does not even account for repair damage recovery due to eutrophication or carbon credit costs to offset the price on the farmer, which would increase the avoided cost. This rough calculation guarantees a 6:1 ROI for farmers investing in our module, which is double the minimum of 3:1 ROI required to convince farmers to take on new technology.</p>
+
+        <h2>Evaluation of Soil Quality</h2>
+        <p>Evaluation of soil quality has been subjective and qualitative until now, even pH soil test strips are based on a visual color inspection and are done manually most of the time. While MUDBUG intends to keep a holistic approach to soil regeneration, it is important for us to quantify the benefits of our sensors in order to convince farmers and investors upfront of the benefits of our module.</p> 
+    </section>
+    
+    <footer3>
+        <p>&copy; 2024 MUDBUG</p>
+    </footer3>
+    <script>
+        function toggleDropdown(dropdownClass) {
+            const dropdown = document.querySelector(`.${dropdownClass}`);
+            dropdown.classList.toggle("select-hide");
+        }
+
+        function selectItem(url, dropdownClass) {
+            window.location.href = url;
+            toggleDropdown(dropdownClass);
+        }
+        window.addEventListener('scroll', function() {
+            const footer = document.getElementById('footer3');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+
+        // Initially hide the footer
+        document.getElementById('footer3').style.display = 'none';
+    </script>
+</body>
+</html>

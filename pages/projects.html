@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact Us - MUDBUG</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="../images/logo.png" alt="MUDBUG logo">
+                    </a>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown1')">
+                    <div class="select-selected">[Projects]</div>
+                    <div class="select-items select-hide dropdown1">
+                        <div onclick="selectItem('sensorsAndMothership.html', 'dropdown1')">Sensors & Mothership</div>
+                    </div>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown2')">
+                    <div class="select-selected">[Updates]</div>
+                    <div class="select-items select-hide dropdown2">
+                        <div onclick="selectItem('2023_2024.html', 'dropdown2')">2023-2024</div>
+                    </div>
+                </div>
+                <li><a href="members.html">[Members]</a></li>
+                <li><a href="contact.html">[Contact]</a></li>
+                <li><a href="about.html">[About]</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <footer3>
+        <p>&copy; 2024 MUDBUG</p>
+    </footer3>
+    <script>
+        function toggleDropdown(dropdownClass) {
+            const dropdown = document.querySelector(`.${dropdownClass}`);
+            dropdown.classList.toggle("select-hide");
+        }
+
+        function selectItem(url, dropdownClass) {
+            window.location.href = url;
+            toggleDropdown(dropdownClass);
+        }
+        window.addEventListener('scroll', function() {
+            const footer = document.getElementById('footer3');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+
+        // Initially hide the footer
+        document.getElementById('footer3').style.display = 'none';
+    </script>
+</body>
+</html>
