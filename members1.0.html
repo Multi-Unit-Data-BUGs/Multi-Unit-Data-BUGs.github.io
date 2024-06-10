@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Team Members - MUDBUG</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="../images/logo.png" alt="MUDBUG logo">
+                    </a>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown1')">
+                    <div class="select-selected">[Projects]</div>
+                    <div class="select-items select-hide dropdown1">
+                        <div onclick="selectItem('sensorsAndMothership.html', 'dropdown1')">Sensors & Mothership</div>
+                    </div>
+                </div>
+                <div class="custom-select" onclick="toggleDropdown('dropdown2')">
+                    <div class="select-selected">[Updates]</div>
+                    <div class="select-items select-hide dropdown2">
+                        <div onclick="selectItem('2023_2024.html', 'dropdown2')">2023-2024</div>
+                    </div>
+                </div>
+                <li><a href="members.html">[Members]</a></li>
+                <li><a href="contact.html">[Contact]</a></li>
+                <li><a href="about.html">[About]</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="main-content2">
+        <h1>Our Team</h1>
+        <div class="team-member">
+            <img src="../images/memberprofilepics/brandon.png" alt="Brandon Bunt">
+            <h2>Brandon Bunt</h2>
+          <p>Founder of MUDBUG.&nbsp;</p>
+            <p>&nbsp;With a Masters Degree in mechanical engineering, they use interdisciplinary practices and integrate, design thinking, and mycomaterials to transform the collected environmental data into farm management decisions.</p>
+        </div>
+        <div class="team-member">
+            <img src="../images/memberprofilepics/ani.png" alt="Ani Vardanyan">
+            <h2>Ani Vardanyan</h2>
+          <p>Lead electrical engineer.</p>
+            <p>&nbsp;Focused on designing proprietary low-cost sensors using e-waste.</p>
+        </div>
+        <div class="team-member">
+            <img src="../images/memberprofilepics/manhim.png" alt="Manhim Liu">
+            <h2>Manhim Liu</h2>
+          <p>Sensor design.&nbsp;</p>
+            <p>Designing of sensors and focusing on powering the modules using renewable sources of energy.</p>
+        </div>
+        <div class="team-member">
+            <img src="../images/memberprofilepics/isaac.png" alt="Isaac Amar">
+            <h2>Isaac Amar</h2>
+          <p>LoRaWAN research.&nbsp;</p>
+            <p>Developing  wireless communication mesh network, which is vital to getting  data from the sensors to the mothership.</p>
+        </div>
+        <div class="team-member">
+            <img src="../images/memberprofilepics/burtprofile.png" alt="Jonghyeok (Burt) Kim">
+            <h2>Jonghyeok (Burt) Kim</h2>
+          <p>Software.&nbsp;</p>
+            <p>Developing the mothership where all the data travels to, and creating&nbsp; the user interface that allows for easy reading of data.</p>
+        </div>
+        <div class="team-member">
+            <img src="../images/memberprofilepics/spencer.png" alt="Spencer Kirsch">
+            <h2>Spencer Kirsch</h2>
+          <p>Enclosure design.&nbsp;</p>
+            <p>Developing modular housing that would protect all the electronics that  are being exposed to the environment.</p>
+        </div>
+		 <img src="../images/groupPic1.png" style="width:100%">
+    </section>
+    
+    <footer3>
+      <p>&copy; 2024 MUDBUG</p>
+    </footer3>
+    <script>
+        function toggleDropdown(dropdownClass) {
+            const dropdown = document.querySelector(`.${dropdownClass}`);
+            dropdown.classList.toggle("select-hide");
+        }
+
+        function selectItem(url, dropdownClass) {
+            window.location.href = url;
+            toggleDropdown(dropdownClass);
+        }
+        window.addEventListener('scroll', function() {
+            const footer = document.getElementById('footer3');
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+
+        // Initially hide the footer
+        document.getElementById('footer3').style.display = 'none';
+    </script>
+</body>
+</html>
