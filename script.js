@@ -38,6 +38,9 @@ function selectItem(url, dropdownClass) {
   window.location.href = url;
   toggleDropdown(dropdownClass);
 }
+function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
 // Optional: Automatically move to the next slide every 10 seconds
 setInterval(function() {
   plusSlides(1);
