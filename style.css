@@ -14,17 +14,14 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/images/fungus1.png'); /* Ensure correct path to your background image */
+    background-image: url('images/fungus1.png'); /* Ensure correct path to your background image */
+    background-repeat: repeat;
     background-size: cover; /* Cover the entire area of the element */
     background-position: center; /* Center the background image */
     opacity: 0.4; /* Set the opacity level */
     z-index: -1; /* Ensure it stays behind other content but above the body background */
 }
 
-header, footer {
-    background-color: rgba(28, 161, 73, 0.7);
-    z-index: 1; /* Above the background image */
-}
 header {
     display: flex;
     align-items: center;
@@ -40,6 +37,7 @@ header {
 
 .bigLogo img {
     height: 80px; /* Adjust size as needed */
+    max-width: 150px;
 }
 
 nav ul {
@@ -74,13 +72,23 @@ nav a {
 }
 
 .main-content {
-    text-align: center;
     padding: 20px;
     background-color: rgba(28, 161, 73, 0.7);
     z-index: 1; /* Above the background image */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; /* Add this to vertically align the items */
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -409,4 +417,26 @@ header a {
 
 .parallelogram-button:hover {
     background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+section {
+    margin-bottom: 40px;
 }
