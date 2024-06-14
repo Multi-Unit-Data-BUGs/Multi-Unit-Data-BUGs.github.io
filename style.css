@@ -10,12 +10,12 @@ body, html {
 body::before {
     content: "";
     position: absolute;
+    height:220%;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     background-image: url('images/fungus1.png'); /* Ensure correct path to your background image */
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     background-size: cover; /* Cover the entire area of the element */
     background-position: center; /* Center the background image */
     opacity: 0.4; /* Set the opacity level */
