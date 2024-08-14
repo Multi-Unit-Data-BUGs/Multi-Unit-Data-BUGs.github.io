@@ -39,36 +39,69 @@ header {
     height: 80px; /* Adjust size as needed */
     max-width: 150px;
 }
+/*
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0 auto; 
+}
+
+nav ul li {
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #1CA149;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0f8f67;
+}
+
+nav a {
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+*/
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
 
 nav ul {
     list-style-type: none;
     display: flex;
-    align-items: center; /* Centers the items vertically */
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    padding: 0 10px; /* Adjust spacing between menu items */
+    margin: 0 20px; /* Adjust this for spacing */
 }
 
+/* Link styling */
 nav ul li a {
-    padding: 8px 16px; /* Ensure padding matches the dropdown */
+    padding: 8px 16px;
     text-decoration: none;
     color: white;
-    background-color: #1CA149; /* Background color matching the header */
-    border-radius: 5px; /* Optionally rounded corners for consistency */
+    background-color: #1CA149;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Additional hover effects for links and selects for better user experience */
-nav ul li a:hover, .custom-select select:hover {
-    background-color: #0f8f67; /* Darker shade for hover state */
-}
-
-/* This ensures any text links appear similar to select boxes */
-nav a {
-    display: inline-block; /* Allows padding to be applied properly */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+nav ul li a:hover {
+    background-color: #0f8f67;
 }
 
 .main-content {
@@ -315,6 +348,7 @@ header a {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
