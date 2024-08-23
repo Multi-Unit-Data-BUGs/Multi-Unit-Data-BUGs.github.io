@@ -6,7 +6,7 @@
     --color-3: #2C3E17; /* R:44 G:62 B:23 */
     --color-4: #3C2717; /* R:60 G:39 B:23 */
     --color-5: #271405; /* R:39 G:20 B:5 */
-    --text-color: var(--color-3); /* Set text color to --color-3 */
+    --text-color: var(--color-3); 
     --background-color: var(--color-1);
 }
 
@@ -51,7 +51,7 @@ body {
     text-align: center;
     flex: 1 1 calc(33.333% - 2rem);
     border: 1px solid var(--color-3); 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -265,7 +265,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust the space between logo and text */
+    gap: 10px;
 }
 
 .logo-image {
@@ -324,7 +324,24 @@ nav {
     }
 
     .nav-links {
-        display: none; /* Hide nav links on mobile */
+        display: none;
+        flex-direction: column;
+        background-color: var(--color-2);
+        position: absolute;
+        top: 60px; 
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+    .burger {
+        display: block; /* Ensure the burger icon is visible */
+        cursor: pointer;
+    }
+    .nav-links.nav-active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 1rem 0; /* Adjust spacing for mobile */
     }
 }
 
@@ -333,7 +350,7 @@ nav {
     color: var(--color-3);
     font-weight: 400;
     transition: color 0.3s ease;
-    position: relative; /* Added for positioning the underline */
+    position: relative; 
 }
 
 .nav-links a:before {

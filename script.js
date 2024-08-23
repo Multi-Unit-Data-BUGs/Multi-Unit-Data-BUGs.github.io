@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Smooth scrolling for all links
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -10,12 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Smooth scrolling for the "Learn More" button
-    document.querySelector('.cta-button').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector('#content').scrollIntoView({
-            behavior: 'smooth'
+    const ctaButton = document.querySelector('.cta-button');
+    if (ctaButton) {
+        ctaButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#content').scrollIntoView({
+                behavior: 'smooth'
+            });
         });
-    });
+    }
 
     // Burger menu functionality 
     const navSlide = () => {
@@ -25,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (burger) {
             burger.addEventListener('click', () => {
-                // Toggle Nav
+                // Toggle Nav visibility
                 nav.classList.toggle('nav-active');
 
                 // Animate Links
