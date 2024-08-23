@@ -3,96 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>About Us & Our Product - MUDBUG</title>
 </head>
-
 <body>
     <header>
         <nav>
-            <ul>
-                <div class="logo">
-                    <a href="home.html">
-                        <img src="../images/logo.png" alt="MUDBUG logo">
-                    </a>
-                </div>
-                <li><a href="about.html">[About]</a></li>
-                <li><a href="contact.html">[Contact & Team]</a></li>
-                <li><a href="blog.html">[Blog]</a></li> 
+            <div class="logo">
+                <img src="../images/logoblk.png" alt="MUDBUG logo" class="logo-image">
+                <span class="logo-text">MUDBUG</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Team</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    
-    <section class="main-content3">
-        <h2>About Us</h2>
-        <p>
-            MUDBUG is dedicated to advancing the field of smart agriculture through innovative research and sustainable practices. Our team works tirelessly to develop systems that not only increase crop yields but also promote environmental conservation.
-        </p>
-        <p>
-            Founded in 2022, our organization has been at the forefront of hydroponic solutions, pioneering technologies that optimize water use and maximize agricultural productivity in urban environments. Our mission is to make sustainable agriculture accessible and efficient for everyone.
-        </p>
-        <p>
-            At MUDBUG, we believe that the future of farming lies in the optimal cultivation methods that offer solutions to the global challenges of food security and climate change.
-        </p>
-    </section>
 
-    <section class="main-content3">
-        <h1>Our Product: Sensors and Mothership</h1>
-        <p>MUDBUG has a competitive edge in what it offers because of the following features:</p>
-        <ul>
-            <li>Low cost</li>
-            <li>Modular design</li>
-            <li>Personalized feedback and support</li>
-            <li>Polyculture compatible design</li>
-            <li>Off-grid network capabilities</li>
-            <li>Renewable energy powered sensor module</li>
-        </ul>
-        <h2>Cost Efficiency</h2>
-        <p>The reason MUDBUG is able to offer such a low cost per full module is due to the use of E-Waste. Our EC sensors are made from old AC plugs, which are abundantly available, and our pH sensors are currently being developed from Christmas light bulbs. Current market prices for pH sensors for solids are about $100. MUDBUG allows the farmer to completely own the sensor module, avoiding the higher risk associated with monthly payments.</p>
+    <main>
+        <section id="content">
+            
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    MUDBUG is dedicated to advancing the field of smart agriculture through innovative research and sustainable practices. Our team works tirelessly to develop systems that not only increase crop yields but also promote environmental conservation.
+                </p>
+                <p>
+                    Founded in 2022, our organization has been at the forefront of hydroponic solutions, pioneering technologies that optimize water use and maximize agricultural productivity in urban environments. Our mission is to make sustainable agriculture accessible and efficient for everyone.
+                </p>
+                <p>
+                    At MUDBUG, we believe that the future of farming lies in the optimal cultivation methods that offer solutions to the global challenges of food security and climate change.
+                </p>
+            </div>
+            <div class="divider"></div>
 
-        <p>MUDBUG comes equipped with 11 sensors, a renewable energy source, and Wi-Fi/cellular network data. The pricing can be adjusted based on what the stakeholder would like to purchase. Our sensors are modular so that farmers or government facilities can customize the modules to their own needs. This flexibility also allows for farmers to take on a lower risk with only the basic pH, EC, and temperature sensors and upgrade to a fuller module as they see results.</p>
-        
-        <h2>Financial Justification and ROI</h2>
-        <p>At $100 per sensor module, we must justify the money spent. The formula MUDBUG uses considers avoided costs over the period that the MUDBUG sensors will be equipped:</p>
-        <p><strong>Avoided Costs per Acre = Repair Damage + Yield Loss + Fertilizer Loss - MUDBUG module cost.</strong></p>
-        <p>It is estimated that 40% of yield is lost per acre, and each acre of farmland is valued at about $1300/acre, resulting in Yield Loss at $510/acre. Up to 50% of nitrogen and 60% of phosphorus applied to crops can be lost due to leaching and soil erosion to water courses. For nitrogen alone, 50 lb/acre of fertilizer is used, at about $0.95/lb of fertilizer, resulting in about $95 worth of fertilizer being lost in water systems. Our MUDBUG modules are estimated to be $100 per module per acre. With a total of $605/acre lost, subtracting the MUDBUG module, the Avoided Cost per Acre is $505/acre. This does not even account for repair damage recovery due to eutrophication or carbon credit costs to offset the price on the farmer, which would increase the avoided cost. This rough calculation guarantees a 6:1 ROI for farmers investing in our module, which is double the minimum of 3:1 ROI required to convince farmers to take on new technology.</p>
+            <div class="container">
+                <h1>Our Product: Sensors and Mothership</h1>
+                <p>MUDBUG has a competitive edge in what it offers because of the following features:</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-dollar-sign"></i> Low cost</li>
+                    <li><i class="fas fa-cogs"></i> Modular design</li>
+                    <li><i class="fas fa-headset"></i> Personalized feedback and support</li>
+                    <li><i class="fas fa-seedling"></i> Polyculture compatible design</li>
+                    <li><i class="fas fa-wifi"></i> Off-grid network capabilities</li>
+                    <li><i class="fas fa-solar-panel"></i> Renewable energy powered sensor module</li>
+                </ul>
+            </div>
+            <div class="divider"></div>
 
-        <h2>Evaluation of Soil Quality</h2>
-        <p>Evaluation of soil quality has been subjective and qualitative until now, even pH soil test strips are based on a visual color inspection and are done manually most of the time. While MUDBUG intends to keep a holistic approach to soil regeneration, it is important for us to quantify the benefits of our sensors in order to convince farmers and investors upfront of the benefits of our module.</p> 
-    </section>
-    <section class="main-content3">
-    <h2>Our Values</h2>
-    <ul>
-        <li>Innovation: We constantly seek cutting-edge solutions to agricultural challenges.</li>
-        <li>Sustainability: Our approaches always consider long-term environmental health.</li>
-        <li>Education: We strive to educate the community about the benefits of hydroponics.</li>
-        <li>Community: Building strong, supportive networks is at the heart of what we do.</li>
-    </ul>
-    </section>
-    <footer3>
-        <p>&copy; 2024 MUDBUG</p>
-    </footer3>
-    <script>
-        function toggleDropdown(dropdownClass) {
-            const dropdown = document.querySelector(`.${dropdownClass}`);
-            dropdown.classList.toggle("select-hide");
-        }
+            <div class="container">
+                <h2>Cost Efficiency</h2>
+                <p>The reason MUDBUG is able to offer such a low cost per full module is due to the use of E-Waste. Our EC sensors are made from old AC plugs, which are abundantly available, and our pH sensors are currently being developed from Christmas light bulbs. Current market prices for pH sensors for solids are about $100. MUDBUG allows the farmer to completely own the sensor module, avoiding the higher risk associated with monthly payments.</p>
 
-        function selectItem(url, dropdownClass) {
-            window.location.href = url;
-            toggleDropdown(dropdownClass);
-        }
-        window.addEventListener('scroll', function() {
-            const footer = document.getElementById('footer3');
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                footer.style.display = 'block';
-            } else {
-                footer.style.display = 'none';
-            }
-        });
+                <p>MUDBUG comes equipped with 11 sensors, a renewable energy source, and Wi-Fi/cellular network data. The pricing can be adjusted based on what the stakeholder would like to purchase. Our sensors are modular so that farmers or government facilities can customize the modules to their own needs. This flexibility also allows for farmers to take on a lower risk with only the basic pH, EC, and temperature sensors and upgrade to a fuller module as they see results.</p>
+            </div>
+            <div class="divider"></div>
 
-        // Initially hide the footer
-        document.getElementById('footer3').style.display = 'none';
-    </script>
+            <div class="container">
+                <h2>Financial Justification and ROI</h2>
+                <p>At $100 per sensor module, we must justify the money spent. The formula MUDBUG uses considers avoided costs over the period that the MUDBUG sensors will be equipped:</p>
+                <p><strong>Avoided Costs per Acre = Repair Damage + Yield Loss + Fertilizer Loss - MUDBUG module cost.</strong></p>
+                <p>It is estimated that 40% of yield is lost per acre, and each acre of farmland is valued at about $1300/acre, resulting in Yield Loss at $510/acre. Up to 50% of nitrogen and 60% of phosphorus applied to crops can be lost due to leaching and soil erosion to water courses. For nitrogen alone, 50 lb/acre of fertilizer is used, at about $0.95/lb of fertilizer, resulting in about $95 worth of fertilizer being lost in water systems. Our MUDBUG modules are estimated to be $100 per module per acre. With a total of $605/acre lost, subtracting the MUDBUG module, the Avoided Cost per Acre is $505/acre. This does not even account for repair damage recovery due to eutrophication or carbon credit costs to offset the price on the farmer, which would increase the avoided cost. This rough calculation guarantees a 6:1 ROI for farmers investing in our module, which is double the minimum of 3:1 ROI required to convince farmers to take on new technology.</p>
+            </div>
+            <div class="divider"></div>
+
+            <div class="container">
+                <h2>Evaluation of Soil Quality</h2>
+                <p>Evaluation of soil quality has been subjective and qualitative until now, even pH soil test strips are based on a visual color inspection and are done manually most of the time. While MUDBUG intends to keep a holistic approach to soil regeneration, it is important for us to quantify the benefits of our sensors in order to convince farmers and investors upfront of the benefits of our module.</p> 
+            </div>
+            <div class="divider"></div>
+
+            <div class="container">
+                <h2>Our Values</h2>
+                <ul class="feature-list">
+                    <li><i class="fas fa-lightbulb"></i> Innovation: We constantly seek cutting-edge solutions to agricultural challenges.</li>
+                    <li><i class="fas fa-leaf"></i> Sustainability: Our approaches always consider long-term environmental health.</li>
+                    <li><i class="fas fa-book"></i> Education: We strive to educate the community about the benefits of hydroponics.</li>
+                    <li><i class="fas fa-users"></i> Community: Building strong, supportive networks is at the heart of what we do.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <!-- Add social media links here -->
+        </div>
+        <p>&copy; 2024 MUDBUG. All rights reserved.</p>
+    </footer>
 </body>
 </html>

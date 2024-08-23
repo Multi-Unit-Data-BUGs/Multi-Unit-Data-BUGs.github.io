@@ -1,47 +1,47 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scrolling for all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-function plusSlides(n) {
-    console.log("Handler called with n =", n);
-    showSlides(slideIndex += n);
-}
+    // Smooth scrolling for the "Learn More" button
+    document.querySelector('.cta-button').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#content').scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Burger menu functionality 
+    const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+        if (burger) {
+            burger.addEventListener('click', () => {
+                // Toggle Nav
+                nav.classList.toggle('nav-active');
 
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+                // Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = '';
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                    }
+                });
 
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
+                // Burger Animation
+                burger.classList.toggle('toggle');
+            });
+        }
+    };
 
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  console.log("Displaying slide #" + slideIndex);
-}
-
-function toggleDropdown(dropdownClass) {
-  document.querySelector(`.${dropdownClass}`).classList.toggle("select-hide");
-}
-
-function selectItem(url, dropdownClass) {
-  window.location.href = url;
-  toggleDropdown(dropdownClass);
-}
-function scrollToSection(sectionId) {
-  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
-// Optional: Automatically move to the next slide every 10 seconds
-setInterval(function() {
-  plusSlides(1);
-}, 10000);
+    navSlide();
+});

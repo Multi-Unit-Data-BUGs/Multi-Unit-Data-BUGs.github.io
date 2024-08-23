@@ -3,63 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>MUDBUG Blog</title>
+    <title>Blog - MUDBUG</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-
 <body>
     <header>
         <nav>
-            <ul>
-                <div class="logo">
-                    <a href="home.html">
-                        <img src="../images/logo.png" alt="MUDBUG logo">
-                    </a>
-                </div>
-                <li><a href="about.html">[About]</a></li>
-                <li><a href="contact.html">[Contact & Team]</a></li>
-                <li><a href="blog.html">[Blog]</a></li> 
+            <div class="logo">
+                <img src="../images/logoblk.png" alt="MUDBUG logo" class="logo-image">
+                <span class="logo-text">MUDBUG</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact & Team</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    
-    <section class="main-content3">
-        <h1>MUDBUG Blog</h1>
-        <section>
-            <h2>Project Updates</h2>
-            <p>Latest news and updates on our ongoing projects.</p>
+
+    <main>
+        <section id="content">
+            <div class="container">
+                <h2>Blog</h2>
+                <p>Welcome to the MUDBUG blog! Here, we share insights on soil health, sustainable farming practices, and updates on our latest projects and technologies. Stay tuned for articles, case studies, and more from our team and partners.</p>
+            </div>
         </section>
+    </main>
 
-        <section>
-            <h2>Technical Insights</h2>
-            <p>Deep dives into the technical aspects of our work.</p>
-        </section>
-    </section>
-    
-    <footer3>
-        <p>&copy; 2024 MUDBUG</p>
-    </footer3>
-    <script>
-        function toggleDropdown(dropdownClass) {
-            const dropdown = document.querySelector(`.${dropdownClass}`);
-            dropdown.classList.toggle("select-hide");
-        }
-
-        function selectItem(url, dropdownClass) {
-            window.location.href = url;
-            toggleDropdown(dropdownClass);
-        }
-        window.addEventListener('scroll', function() {
-            const footer = document.getElementById('footer3');
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                footer.style.display = 'block';
-            } else {
-                footer.style.display = 'none';
-            }
-        });
-
-        // Initially hide the footer
-        document.getElementById('footer3').style.display = 'none';
-    </script>
+    <footer>
+        <div class="social-links">
+            <!-- Add social media links here -->
+        </div>
+        <p>&copy; 2024 MUDBUG. All rights reserved.</p>
+    </footer>
 </body>
 </html>
