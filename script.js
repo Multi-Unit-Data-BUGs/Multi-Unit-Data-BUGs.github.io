@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const content = button.previousElementSibling; // Select the content right before the button
         if (content.style.display === "none" || content.style.display === "") {
             content.style.display = "block";
-            button.textContent = "Read Less";
+            button.textContent = "See Less";
         } else {
             content.style.display = "none";
-            button.textContent = "Read More";
+            button.textContent = "See More";
         }
     }
 

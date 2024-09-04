@@ -44,42 +44,54 @@
         </section>
 
         <section id="content">
-                <div id="tech-updates" class="container">
-                    <h2>Technology Updates</h2>
-                    <div class="blog-post">
-                        <h4>MUDBUG's Urban Garden Experiment: Navigating Challenges and Finding Solutions</h4>
-                        <p class="post-meta">Posted on August 26, 2024 by Isaac Amar</p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
-                        <img src="../images/loisaida1.jpeg" alt="2nd iteration of our module at Loisaida" class="expanded-image">
+            <div id="tech-updates" class="container">
+                <h2>Technology Updates</h2>
+                
+                <div class="blog-post">
+                    <h4>Our Urban Garden Experiment at the Loisaida Center</h4>
+                    <p class="post-meta">Posted on August 26, 2024 by Isaac Amar</p>
+                    <p>We've been hard at work at Loisaida setting up our garden modules. During the setup, we identified a few areas for improvement: upgrading the mothership's power supply and enhancing LoRa connectivity, particularly given the challenges of an urban environment. We're also considering stronger antennas to boost signal strength and ensure stable data collection. Progress continues as we refine our setup for optimal performance.</p>
+                    
 
-                        <div class="more-content" style="display: none;">
-                            <h5>Power Supply Issues</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis.</p>
-                            <img src="../images/loisaida2mthshp.jpeg" alt="Current mothership at Loisaida" class="expanded-image">
-                            <h5>Connectivity and Signal Problems</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor.</p>
-                            
-                            <h5>Solutions and Adjustments</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor.</p>
-                            
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                            
-                            <h5>Looking Forward</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue.</p>
-                            
-                            <!-- Placeholder for future images -->
-                            <p>[Image placeholders will be added here to illustrate key points of the project]</p>
-                        </div>
-                        
-                        <a href="#" class="read-more">Read More</a>
+                    <div class="more-content" style="display: none;">
+                    <figure class="expanded-image">
+                        <img src="../images/loisaida1.jpeg" alt="2nd iteration of our module at Loisaida">
+                        <figcaption>2nd iteration of our module at Loisaida</figcaption>
+                    </figure>
+                    
+                    <figure class="expanded-image">
+                        <img src="../images/loisaida2mthshp.jpeg" alt="Current mothership at Loisaida">
+                        <figcaption>Current mothership at Loisaida</figcaption>
+                    </figure>
+                    
                     </div>
-                    <hr class="divider">
+                    
+                    <a href="#" class="read-more" onclick="toggleContent(this); return false;">Read More</a>
                 </div>
-            </div>
+                
+                <div class="blog-post">
+                    <h4>Enclosure Advancements</h4>
+                    <p class="post-meta">Posted on August 31, 2024 by Spencer Kirsch</p>
+                    <p>We're making steady progress on the enclosure front! We've created a frame to streamline soldering and compact our prototype. Additionally, we've developed a prebend fixture to efficiently connect wires between the Lora chip and ESP32 and refined the enclosure cap to fit our o-ring line perfectly. Next, we'll focus on finalizing the stake and enclosure design for the PCB, ensuring everything is robust and ready for deployment.</p>
+                    
+
+                    <div class="more-content" style="display: none;">
+                        <figure class="expanded-image">
+                            <img src="../images/encfixture.jpeg" alt="Enclosure fixture">
+                            <figcaption>Enclosure frame</figcaption>
+                        </figure>
             
+                        <figure class="expanded-image">
+                            <img src="../images/oring.jpeg" alt="Newest o-ring update">
+                            <figcaption>Newest o-ring update + semi-automated wire bending fixture</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <a href="#" class="read-more" onclick="toggleContent(this); return false;">Read More</a>
+                </div>
+        
+                <hr class="divider">
+            </div>
             <div id="soil-science" class="container">
                 <h2>Soil Science Insights</h2>
                 <div class="blog-post">

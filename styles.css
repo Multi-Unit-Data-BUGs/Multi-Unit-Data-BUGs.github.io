@@ -394,8 +394,15 @@ nav {
 }
 
 /* Additional styling for expanded content */
-.expanded-image {
-    max-width: 100%;
-    margin-top: 1rem;
-    border-radius: 8px;
+.expanded-image img {
+    max-width: 70%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+}
+figcaption {
+    font-size: 1em; /* Optional: Adjusts the font size */
+    color: #555; /* Optional: Sets a color for the caption text */
+    text-align: center; /* Centers the caption text */
+    margin-top: 5px; /* Adds a little space above the caption */
 }
