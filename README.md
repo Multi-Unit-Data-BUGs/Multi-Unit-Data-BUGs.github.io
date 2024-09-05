@@ -1,6 +1,6 @@
 # MUDBUG Website
 
-**Note**: This is a temporary solution for the MUDBUG team to contribute to the website. All contributions should follow the general guidelines below.
+**Note**: This is a temporary solution for the MUDBUG team to contribute to the website blog. All contributions should follow the general guidelines below.
 
 Make sure you have the following installed:
 
@@ -31,7 +31,7 @@ Use descriptive branch names like `feature-update`.
 
 ### 3. Make Changes
 
-Make your edits to the code. Preview HTML files in VSCode using extensions like Live Server to check your changes.
+Make your edits to the code in blog.html under pages. Preview HTML files in VSCode using extensions like Live Server to check your changes (right click index.html --> Open with Live Server).
 
 ### 4. Commit Your Changes
 
